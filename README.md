@@ -1,126 +1,53 @@
+# LINARA — A Digital Health Companion for Women
 
-# LINARA - Comprehensive Digital Healthcare Platform
+LINARA is an all-in-one app that helps women take care of their health. In one place, you can order medication and health products, chat with an AI assistant about health questions, track your menstrual cycle, and book appointments with clinics or doctors — no need to juggle multiple apps or services.
 
-LINARA is a comprehensive digital healthcare solution designed specifically for women's health, combining e-commerce pharmacy services, AI-powered health assistance, menstrual cycle tracking, and healthcare service booking in one integrated platform.
+## What can you do with LINARA?
 
-## 🚀 Quick Start
+### 🛒 Order health products and medication
+Browse products from partner pharmacies, buy what you need, track your order, and get reminders when it's time to refill a prescription.
+
+### 🤖 Talk to an AI health assistant
+Ask health-related questions anytime and get helpful guidance. The assistant can also recognize when someone needs urgent help and point them toward real support. It works in English, Spanish, French, Kinyarwanda, and Swahili.
+
+### 📊 Track your menstrual cycle
+Log your cycle and symptoms to get predictions, fertility insights, and personalized tips based on your own patterns.
+
+### 🏥 Book healthcare appointments
+Find and book appointments with clinics, or connect with a healthcare provider remotely through telemedicine.
+
+### 👤 Manage your own health profile
+Create a secure account, keep track of your order history, and set your personal health preferences.
+
+### 🔧 For administrators
+Behind the scenes, admins have a dashboard to manage products, inventory, and orders, oversee pharmacies, review analytics, and keep the AI assistant accurate and helpful.
+
+## Who is LINARA for?
+
+- **Women** looking for a simple, trustworthy place to manage their health
+- **Clinics and pharmacies** that want to offer their services through the platform
+- **Administrators** who run and maintain the platform
+
+## Our Mission
+
+We want every woman to have easy access to the healthcare tools and support she needs. LINARA brings together modern technology and everyday healthcare so that staying healthy feels simple, not stressful.
+
+---
+
+## For Developers
+
+### Tech Stack
+
+**Frontend:** React 18, TypeScript, Vite, Tailwind CSS, shadcn/ui, TanStack Query, React Router DOM
+
+**Backend:** Supabase (PostgreSQL database, authentication, real-time features, edge functions, and file storage)
 
 ### Prerequisites
-- Node.js 18+ and npm
+- Node.js 18+ and npm ([install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating))
 - Supabase CLI (for local development)
 - Git
 
-### Installation
-```bash
-# Clone the repository
-git clone <your-repo-url>
-cd linara
-
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-```
-
-## 🏗️ Architecture
-
-### Frontend Stack
-- **React 18** with TypeScript
-- **Vite** for build tooling
-- **Tailwind CSS** for styling
-- **shadcn/ui** for UI components
-- **TanStack Query** for state management
-- **React Router DOM** for routing
-
-### Backend Stack
-- **Supabase** for database, authentication, and real-time features
-- **PostgreSQL** with Row Level Security (RLS)
-- **Supabase Edge Functions** for serverless backend logic
-- **Supabase Storage** for file management
-
-## 📋 Key Features
-
-### 🛒 **E-Commerce Pharmacy**
-- Browse and purchase healthcare products and medications
-- Multi-pharmacy inventory management
-- Real-time stock tracking and alerts
-- Secure checkout and order management
-- Prescription refill reminders
-
-### 🤖 **AI-Powered Health Assistant**
-- Intelligent chatbot for health consultations
-- Crisis detection and support referrals
-- Personalized health recommendations
-- Multilingual support (English, Spanish, French, Kinyarwanda, Swahili)
-
-### 📊 **Menstrual Cycle Tracking**
-- Comprehensive cycle monitoring
-- Fertility predictions and insights
-- Symptom tracking and analysis
-- Personalized health suggestions
-
-### 🏥 **Healthcare Services**
-- Online clinic booking system
-- Telemedicine appointments
-- Healthcare provider network
-- Medical consultation scheduling
-
-### 👥 **User Management**
-- Secure user authentication
-- Personal health profiles
-- Order history and tracking
-- Customizable health preferences
-
-### 🔧 **Admin Dashboard**
-- Complete product and inventory management
-- Order processing and fulfillment
-- User management and analytics
-- Pharmacy network administration
-- Chatbot training and optimization
-- Crisis support monitoring
-
-## Technology Stack
-
-This project is built with modern web technologies:
-
-- **Frontend**: React 18 with TypeScript
-- **Build Tool**: Vite for fast development and optimized builds
-- **Styling**: Tailwind CSS with shadcn/ui components
-- **Backend**: Supabase (PostgreSQL database, authentication, real-time features)
-- **State Management**: TanStack Query for server state
-- **Routing**: React Router DOM
-- **Charts**: Recharts for data visualization
-- **Icons**: Lucide React
-- **Forms**: React Hook Form with Zod validation
-
-## Project Structure
-
-The application follows a modular architecture with:
-
-- **Components**: Reusable UI components organized by feature
-- **Pages**: Main application routes and views
-- **Hooks**: Custom React hooks for data fetching and state management
-- **Types**: TypeScript type definitions for type safety
-- **Contexts**: React contexts for global state management
-- **Integrations**: External service integrations (Supabase)
-
-## Target Audience
-
-- **Primary Users**: Women seeking comprehensive healthcare solutions
-- **Healthcare Providers**: Clinics and pharmacies offering services
-- **Administrators**: Platform managers overseeing operations
-
-## Mission Statement
-
-MamaHealth aims to empower women by providing accessible, comprehensive, and personalized healthcare solutions through innovative technology. We bridge the gap between traditional healthcare and modern digital convenience, ensuring every woman has the tools and support she needs for optimal health and wellbeing.
-
-## Getting Started
-
-### Prerequisites
-- Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-### Installation
+### Getting Started
 
 ```sh
 # Clone the repository
@@ -136,34 +63,30 @@ npm install
 npm run dev
 ```
 
-## Development
+### Other Useful Commands
 
-### Running the Application
 ```sh
-npm run dev
-```
-
-### Building for Production
-```sh
+# Build for production
 npm run build
-```
 
-### Preview Production Build
-```sh
+# Preview the production build
 npm run preview
 ```
 
-## Deployment
+### Project Structure
 
-This project can be deployed to any modern hosting service that supports React applications such as:
+- **Components** – Reusable UI pieces, organized by feature
+- **Pages** – The app's main screens and routes
+- **Hooks** – Custom logic for fetching data and managing state
+- **Types** – TypeScript definitions for type safety
+- **Contexts** – Shared state across the app
+- **Integrations** – Connections to external services (like Supabase)
 
-- Vercel
-- Netlify
-- AWS Amplify
-- Firebase Hosting
-- GitHub Pages
+### Deployment
 
-## Contributing
+LINARA can be deployed to any modern hosting service that supports React apps, such as Vercel, Netlify, AWS Amplify, Firebase Hosting, or GitHub Pages.
+
+### Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
@@ -171,11 +94,11 @@ This project can be deployed to any modern hosting service that supports React a
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## License
+### License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License — see the LICENSE file for details.
 
-## Support
+### Support
 
 For technical support or questions about the platform, please contact the development team or open an issue in the repository.
 
